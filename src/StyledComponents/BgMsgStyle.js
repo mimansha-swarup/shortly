@@ -3,7 +3,7 @@ import bg  from  "../assets/bg-boost-desktop.svg"
 
 const BgCont = styled.div`
     background-color:${({theme})=>theme.colors.primary.DarkViolet};
-    background-color:#3b3054;
+    /* background-color:#3b3054; */
     background: url(${bg}) center no-repeat ;
     background-size: cover;
     

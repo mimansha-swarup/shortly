@@ -6,6 +6,7 @@ import IntroCont from "./Layout/Intro"
 import Footer from "./Layout/Footer"
 import InfoCont from "./Layout/Info"
 import BgBoost from "./Layout/BgMsg"
+import Shorten from "./Layout/Shorten"
 function App() {
   return (
     <ThemeProvider theme={Theme}>
@@ -13,6 +14,7 @@ function App() {
       <div className="App">
         <Nav/>
         <IntroCont/>
+        <Shorten/>
         <InfoCont/>
         <BgBoost/>
         <Footer/>

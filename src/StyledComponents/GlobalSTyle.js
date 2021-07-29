@@ -8,7 +8,14 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     font-size: 18px;
     overflow-x: hidden;
+    /* width: 100%; */
+  }
+  /* html{
+    
     width: 100%;
   }
+  :root{
+    width: 100%;
+  } */
   `
   export default GlobalStyles;
