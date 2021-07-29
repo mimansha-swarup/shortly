@@ -109,7 +109,8 @@ const GreyBox = styled.div`
     height: fit-content;
     padding: 1rem 9rem;
     @media (max-width: 768px) {
-        padding: 0;
+        padding: 1rem 0;
+        /* margin: 1rem 0; */
     }
 
 `;
@@ -137,6 +138,8 @@ const LinkBox = styled.div`
         align-self: center;
         width: auto;
         margin: 0 1.5rem;
+        margin-bottom: .5rem;
+        padding: 0.5rem ;
         flex-direction: column;
         div{
             flex-direction: column;
