@@ -3,7 +3,7 @@ export default {
         hover:"#9CE2E2",
         primary:{
             Cyan: '#2acfcf',
-            DarkViolet: '#3b3054,'
+            DarkViolet: '#3b3054',
         },
         secondary:{
             Red:"#f46262",
