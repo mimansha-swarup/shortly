@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import bg  from  "../assets/bg-boost-desktop.svg"
+import BgMob  from  "../assets/bg-boost-mobile.svg"
 
 const BgCont = styled.div`
-    background-color:${({theme})=>theme.colors.primary.DarkViolet};
     /* background-color:#3b3054; */
     background: url(${bg}) center no-repeat ;
     background-size: cover;
+    background-color:${({theme})=>theme.colors.primary.DarkViolet};
     
     height: 40vh;
     max-height: fit-content;
@@ -15,13 +16,20 @@ const BgCont = styled.div`
     div{
         height: 40vh;
         align-items: center;
-        background-color:rgb(59, 48, 84,.9);
         
+    }
+    @media (max-width:768px){
+        background: url(${BgMob}) center no-repeat ;
+        background-size: cover;
+        background-color:${({theme})=>theme.colors.primary.DarkViolet};
+        
+      
     }
     `;
 const BoostHeading = styled.h2`
-    margin:0 0 2rem;
-    color: #fff;
+
+margin:0 0 2rem;
+color: #fff;
     padding-top: 5rem;
     text-align: center;
 

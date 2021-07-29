@@ -3,6 +3,12 @@ import styled from "styled-components";
 const Row = styled.div`
 height: fit-content;
   display: flex;
+  @media (max-width: 768px) {
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
 `;
 const Column = styled.div`
   display: flex;
@@ -10,6 +16,12 @@ const Column = styled.div`
   justify-content: center;
   height: fit-content;
   /* align-items: center;  */
+  @media (max-width: 768px) {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+
+  }
   `;
 const ColumnCenter = styled.div`
   display: flex;
@@ -26,6 +38,10 @@ flex-direction: column;
 align-items: center;
 overflow-x:hidden;
 margin: 0;
+@media (max-width: 768px) {
+  margin: auto;
+  min-height: 170vh;
+  }
 
 
 

@@ -10,7 +10,7 @@ const Footer = () => {
     return ( 
         <FooterCont>
             <img style={{color:"#fff"}} src={footericon} alt="" />
-            <Row>
+            <div>
             <ul>
             <FooterHeading>
                 Features
@@ -38,7 +38,7 @@ const Footer = () => {
                 <li>Careers</li>
                 <li>Contact</li>
             </ul>
-            </Row>
+            </div>
             <LogoRow>
                 <img src={fb} alt="" />
                 <img src={twitter} alt="" />

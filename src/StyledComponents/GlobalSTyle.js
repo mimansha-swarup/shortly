@@ -10,12 +10,13 @@ const GlobalStyles = createGlobalStyle`
     overflow-x: hidden;
     /* width: 100%; */
   }
-  /* html{
+  html{
+    overflow-x: hidden;
     
     width: 100%;
   }
   :root{
     width: 100%;
-  } */
+  }
   `
   export default GlobalStyles;

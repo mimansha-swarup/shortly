@@ -5,7 +5,7 @@ background-color: ${({theme})=>theme.colors.neutral.Gray};
 padding: 2rem 0 5rem 0;
 margin: 0;
 height: fit-content;
-min-height: calc(100vh + 20%);
+/* min-height: calc(100vh + 20%); */
 
 `;
 const  SubHeading = styled.h2`
@@ -25,6 +25,11 @@ line-height: 1.5rem;
 margin: .5rem 0;
 font-weight: 500;
 margin-bottom: 7rem;
+
+@media  (max-width:768px){
+    width:330px;
+
+}
 `;
 
 const Card= styled.div`
@@ -33,11 +38,21 @@ padding: 1rem 1.5rem;
 border-radius: .5rem;
 
 &:nth-child(5){
-    transform: translate(0,40%);
+    transform: translate(0,6rem);
 }
 &:nth-child(3){
-    transform: translate(0,20%);
+    transform: translate(0,3rem);
 }
+@media (max-width: 768px) {
+    margin:.9rem 0;
+    &:nth-child(5){
+        transform: translate(0,0);
+    }
+    &:nth-child(3){
+        transform: translate(0,0);
+    }
+       
+   }
 
 `;
 const  CardImage = styled.div`
@@ -48,6 +63,10 @@ align-items: center;
 border-radius: 50%;
 width: fit-content;
 transform: translate(0,-60%);
+@media (max-width:768px){
+    transform: translate(90%,-60%);
+
+}
     
 `;
 const  CardHeading = styled.h3`
@@ -64,6 +83,15 @@ const  CardBody = styled.p`
     margin: 1.5rem 0;
 
 `;
+
+const CardLayOut = styled.div`
+    display: flex;
+    @media (max-width: 768px) {
+       flex-direction: column;
+
+   }
+`;
+
 const  Line = styled.hr`
 
     width:50px;
@@ -72,8 +100,12 @@ const  Line = styled.hr`
     border: none;
     height: 10px;
     background-color: ${({theme})=>theme.colors.primary.Cyan};
+    @media (max-width: 768px) {
+       transform: rotate(90deg);
+
+   }
 
 `;
 
 
-export {InfoBox,SubHeading,DescriptionCenter,Card,Line,CardBody,CardHeading,CardImage};
+export {InfoBox,SubHeading,CardLayOut,DescriptionCenter,Card,Line,CardBody,CardHeading,CardImage};

@@ -1,5 +1,5 @@
-import { Container, ColumnCenter,Row } from "../StyledComponents/CommonComponent"
-import { InfoBox,SubHeading,DescriptionCenter, Line } from "../StyledComponents/InfoStyle"
+import { Container, ColumnCenter } from "../StyledComponents/CommonComponent"
+import { InfoBox,SubHeading,CardLayOut,DescriptionCenter, Line } from "../StyledComponents/InfoStyle"
 import BrandRecognitionLogo from "../assets/icon-brand-recognition.svg"
 import DetailedRecordsLogo from "../assets/icon-detailed-records.svg"
 import FullyCustomizableLogo from "../assets/icon-fully-customizable.svg"
@@ -36,13 +36,13 @@ const InfoCont = () => {
                     </DescriptionCenter>
                     
                 </ColumnCenter>
-                <Row>
+                <CardLayOut>
                     <CardDisplay data={cardData[0]} />
                     <Line/>
                     <CardDisplay data={cardData[1]} />
                     <Line/>
                     <CardDisplay data={cardData[2]} />                
-                </Row>
+                </CardLayOut>
             </Container>
         </InfoBox>
      );
