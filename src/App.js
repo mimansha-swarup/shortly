@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Nav from "./Layout/NavBar"
+import Theme from "./StyledComponents/theme"
+import {ThemeProvider} from "styled-components"
+import GlobalStyles from "./StyledComponents/GlobalSTyle"
+import IntroCont from "./Layout/Intro"
+import Footer from "./Layout/Footer"
+import InfoCont from "./Layout/Info"
+import BgBoost from "./Layout/BgMsg"
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={Theme}>
+      <GlobalStyles/>
+      <div className="App">
+        <Nav/>
+        <IntroCont/>
+        <InfoCont/>
+        <BgBoost/>
+        <Footer/>
+      </div>
+    </ThemeProvider>
   );
 }
 
