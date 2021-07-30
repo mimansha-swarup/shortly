@@ -36,7 +36,10 @@ const Shorten = () => {
 
             <InputCont>
                 {/* <Row> */}
-                    <Input onChange={(e)=>setUserUrl(e.target.value)} type="text" placeholder="Shortern a  link here..." ></Input>
+            {/* <div> */}
+                    <Input required onChange={(e)=>setUserUrl(e.target.value)} name ="inpshort" type="text" placeholder="Shortern a  link here..." ></Input>
+                <label htmlFor="inpshort">Please add a Link</label>
+            
                     <NotRoundedPrimaryButton type="submit" >Shortern it!</NotRoundedPrimaryButton>
                 
             </InputCont>

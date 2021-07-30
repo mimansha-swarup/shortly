@@ -18,6 +18,7 @@ align-items: center;
 justify-content: center;
 display: flex;
 margin: 0 9rem;
+position: relative;
 
 @media (max-width: 768px) {
     background: url(${ShortenImgBgmob}) center center no-repeat ;
@@ -28,21 +29,48 @@ margin: 0 9rem;
     
 
   }
-
+  
 `;
 const Input = styled.input`
     padding: 1rem 2rem;
     font-size: 18px;
     width: 60%;
     border-radius:.5rem;
-    font-weight: 700;
+    font-weight: 500;
     outline: none;
     border :1px solid #35323e;
+    
+
+    &:invalid::before{
+        content: "add a link";
+    }
+    &:invalid{
+        border: 2px solid ${({theme})=>theme.colors.secondary.Red};
+        
+    }
+    &:invalid::placeholder{
+        color: ${({theme})=>theme.colors.secondary.Red};
+    }
+    &:invalid~label{
+        display: block;
+        color: ${({theme})=>theme.colors.secondary.Red};
+        font-size: 14px;
+        position: absolute;
+        left:calc(1rem + 6vw);
+        bottom: 1rem;
+    }
+    &~label{
+        display: none;
+    }
+    
     @media (max-width: 768px) {
         width:auto;
         padding: .5rem 2rem;
         margin: 1rem 0;
         
+        &:invalid~label{
+            bottom: 6rem
+        }
         
   }
 
