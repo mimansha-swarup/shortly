@@ -4,7 +4,6 @@ import fb from "../assets/icon-facebook.svg"
 import ig from "../assets/icon-instagram.svg"
 import twitter from "../assets/icon-twitter.svg"
 import pinterest from "../assets/icon-pinterest.svg"
-import { Row } from "../StyledComponents/CommonComponent";
 
 const Footer = () => {
     return ( 
